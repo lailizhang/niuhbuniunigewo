@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>游戏生成器 - DeepSeekR1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>游戏生成器</h1>
+        <textarea id="gameInput" placeholder="描述你想要的游戏...（例如：一个太空射击游戏）"></textarea>
+        <button id="generateBtn">开始制作</button>
+        
+        <div class="progress-container">
+            <div id="progressBar" class="progress-bar"></div>
+        </div>
+        
+        <button id="playBtn" disabled>开始游戏</button>
+    </div>
+    
+    <iframe id="gameFrame" sandbox="allow-scripts" style="width:100%; height:500px; border:none; background:white;"></iframe>
+    <div id="gameStatus">等待生成游戏...</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
